@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+    <title>Gallery of Political Comix and Illustrations by Gwen</title>
+
+    <script>
+        document.addEventListener('contextmenu', (e)=>{
+            if(e.target.nodeName === 'IMG'){
+                e.preventDefault();
+            }
+        })
+    </script>
+</head>
+
+<body oncontextmenu="return false">
+    <div class="topofthepage">
+        <div class="logospot">
+            <img src="images/comixlogo4rlz.png" alt="Icon">
+        </div>
+
+        <div class="titlespot">
+            <h1>Gallery of Political Comics and Illustrations by Gwen</h1>
+        </div>
+
+        <div class="headerspot">
+            <img src="images/comixheader4realz.png" alt="Logo">
+        </div>
+    </div>
+
+    <div class="slider">
+        <span style="--i:1;"><img src="images/img1.png" alt=""></span>
+        <span style="--i:2;"><img src="images/img2.png" alt=""></span>
+        <span style="--i:3;"><img src="images/img3.png" alt=""></span>
+        <span style="--i:4;"><img src="images/img4.jpg" alt=""></span>
+        <span style="--i:5;"><img src="images/img5.png" alt=""></span>
+        <span style="--i:6;"><img src="images/img6.jpg" alt=""></span>
+        <span style="--i:7;"><img src="images/img7.png" alt=""></span>
+        <span style="--i:8;"><img src="images/img8.png" alt=""></span>
+    </div>
+
+
+
+    <div class="bulk">
+        <div class="featured">
+             <h2>New and Featured</h2>
+            <br>
+            <img src="images/img8.png" alt="Puny Patriarchy: She-Hulk Smashes an Old Rich Man in Charge">
+        </div>
+
+        <h1>Main Gallery</h1>
+
+        <h3>Click an image to embiggen!</h3>
+
+        <div class="container">
+            <div class="gallery">
+                <a href="images/img1.png" data-lightbox="political" data-title="Knowledge is Power">
+                    <img src="images/img1.png" alt="">
+                </a>
+                <a href="images/img2.png" data-lightbox="political" data-title="Body Autonomy">
+                    <img src="images/img2.png" alt="">
+                </a>
+                <a href="images/img3.png" data-lightbox="political" data-title="Plague Doctor">
+                    <img src="images/img3.png" alt="">
+                </a>
+                <a href="images/img4.jpg" data-lightbox="political" data-title="Republican Hippo">
+                    <img src="images/img4.jpg" alt="">
+                </a>
+                <a href="images/img5.png" data-lightbox="political" data-title="Captain Marvel vs. A Very Fine Man">
+                    <img src="images/img5.png" alt="">
+                </a>
+                <a href="images/img6.jpg" data-lightbox="political" data-title="Trumpephant">
+                    <img src="images/img6.jpg" alt="">
+                </a>
+                <a href="images/img7.png" data-lightbox="political" data-title="No Exit aka Earth Day 2020">
+                    <img src="images/img7.png" alt="">
+                </a>
+                <a href="images/img8.png" data-lightbox="political" data-title="Puny Patriarchy">
+                    <img src="images/img8.png" alt="">
+                </a>
+                <a href="images/img9.jpg" data-lightbox="political" data-title="America Inflamed">
+                    <img src="images/img9.jpg" alt="">
+                </a>
+                <a href="images/img10.png" data-lightbox="political" data-title="Dying to Live">
+                    <img src="images/img10.png" alt="">
+                </a>
+                <a href="images/img11.jpg" data-lightbox="political" data-title="Temptation of Normalcy">
+                    <img src="images/img11.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    
+
+    <div class="bottom">
+        <div class="linkbutton">
+            <p>To explore my other artistic endeavors, as well as to find <br>out 
+                more about me, go to my main site, PenOfGwen.com .</p>
+            <img src="images/sitebutton.jpg" usemap="#image-map">
+    
+            <map name="image-map">
+                <img src="sitebutton.jpg" usemap="#image-map">
+    
+                <map name="image-map">
+                    <area target="" alt="Pen of Gwen Link" title="Pen of Gwen Link" href="penofgwen.com" coords="8,70,87,6,101,16,115,3,131,19,570,20,586,8,597,14,614,3,640,23,626,31,631,42,648,33,691,68,650,107,634,97,620,104,640,121,616,136,602,121,586,133,566,122,126,123,112,135,101,124,89,138,62,119,77,110,61,96,52,108" shape="poly">
+                </map>
+        </div>
+        <div class="creditdue">
+            <br>
+            <a href="https://www.freepik.com/free-vector/silver-buttons-with-fantasy-frames_26508590.htm#query=fancy%20stone%20button&position=3&from_view=search">Image by upklyak</a> on Freepik</p>
+        </div>
+    </div>
+
+
+<div class="contactform"> 
+    <h2>Contact Me</h2><br>
+    <br>
+    <form action="https://formsubmit.co/gwen@penofgwen.com">
+        <div class="row">
+        <div class="input-group">
+            <input type="text" id="name" required>
+            <label for="name">Your Name</label>
+        </div>
+        <div class="input-group">
+            <input type="text" id="email" required>
+            <label for="email">Your Email Address</label>
+        </div>
+    </div>
+        <div class="input-group">
+            <textarea id="message" rows="10" required></textarea>
+            <label for="message">Your Message</label>
+        </div>
+        
+        <button type="submit">
+            SUBMIT
+        </button>
+        
+    </form>
+</div>
+</div>
+
+
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>

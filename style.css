@@ -1,0 +1,264 @@
+body {
+    background: linear-gradient(to right, #381e4d, #4b8282);
+    display: flex;
+    justify-content: center;
+}
+
+.topofthepage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: 1fr;
+    position: static;
+}
+
+.topofthepage .titlespot {
+    position: relative;
+    top: 8px;
+    font-family: 'Indie Flower', cursive;
+    font-size: xx-large;
+    text-align: center;
+    color: lightblue;
+    border-color: lightblue;
+    border-width: 2.5px;
+    border-style: solid;
+    border-radius: 14px;
+    min-width: 600px;
+    max-width: 800px;
+    flex: 68;
+    z-index: 99;
+}
+
+.topofthepage .logospot {
+    position: relative;
+    flex: 12%;
+}
+
+.topofthepage .logospot img {
+    max-height: 60%;
+    position: relative;
+    top: 50px;
+    float: right;
+}
+
+.topofthepage .headerspot {
+    flex: 12%;
+    position: relative;
+    top: 20px;
+}
+
+.topofthepage .headerspot img {
+    width: 90%;
+    top: 25px;
+    position: relative;
+}
+
+
+
+.slider{
+    position: absolute;
+    top: 152px;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+    z-index: 101;
+}
+
+@keyframes rotate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slider span {
+    position: absolute;
+    left: 0;
+    width: 10%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(300px)
+}
+
+.slider span img{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.slider span:hover img{
+    transform: translateY(-62px) scale(1.9);
+}
+
+
+.bulk{
+    color: lightblue;
+    font-family: 'Indie Flower', cursive;
+    font-size: large;
+    text-align: center;
+    position: absolute;
+    top: 550px;
+}
+
+.bulk h1 {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    color: lightblue;
+    position: relative;
+    border-color: lightblue;
+    border-width: 2.5px;
+    border-style: solid;
+    border-radius: 14px;
+}
+
+.bulk h2 {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    color: lightblue;
+    position: relative;
+}
+
+.featured{
+    position: relative;
+    border-color: lightblue;
+    border-width: 2.5px;
+    border-style: solid;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.featured img {
+    width: 87%
+}
+
+.container{
+    position: static;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 50px 8%;
+    flex-wrap: wrap;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.gallery img {
+    width: 400px;
+}
+
+.contactform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    border: 2px solid lightblue;
+    padding: 30px;
+    width: 50%;
+    top: 15px;
+}
+
+.contactform h2 {
+    text-align: center;
+    position: static;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-group{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input, textarea{
+    width: 100%;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid lightblue;
+    color: lightblue;
+    background: transparent;
+    font-size: 15px;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: lightblue;
+    cursor: text;
+    font-family: 'Indie Flower', cursive;
+    font-size: 19px;
+    transition: 0.2s;
+}
+
+button{
+    padding: 10px 0;
+    color: lightblue;
+    outline: none;
+    background: transparent;
+    border: 1px solid lightblue;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+input:focus~label,
+input:valid~label{
+    top: -35px;
+    font-size: 13px;
+    color: lightblue;
+}
+
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 13px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+   .row label {
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 5px;
+        color: black;
+        cursor: text;
+        font-family: 'Indie Flower', cursive;
+        font-size: 18px;
+        transition: 0.2s;
+        height: 110%;
+}
+
+.row .input-group{
+    flex-basis: 48%;
+    color: darkcyan;
+}
+
+
+
