@@ -260,5 +260,26 @@ textarea:valid~label{
     color: darkcyan;
 }
 
+.herorow{    
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    position: absolute;
+    border: 8px solid lightblue;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+}
 
+.blogspot{
+    right: 0;
+    position: relative;
+    top: 12px;
+    width: 45%;
+}
+
+.blogspot h3 {
+    text-align: center;
+}
 
